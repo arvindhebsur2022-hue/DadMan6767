@@ -55,10 +55,10 @@
     let keys = {};  
     let pickupCooldown = false;  
   
-    const dadImage = new Image();  
-    dadImage.src = '67.png';  
+    const sixSevenImage = new Image();  
+    sixSevenImage.src = 'sixSeven.png';  
   
-    dadImage.onload = () => {  
+    sixSevenImage.onload = () => {  
       generateLevel(currentLevelNumber);  
       gameLoop();  
     };  
@@ -296,7 +296,7 @@ window.addEventListener("keyup", e => {
         }  
       }  
   
-      ctx.drawImage(dadImage, player.x, player.y, player.width, player.height);  
+      ctx.drawImage(sixSevenImage, player.x, player.y, player.width, player.height);  
   
       // Draw facing arrow  
       ctx.fillStyle = 'black';  
